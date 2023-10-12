@@ -2,12 +2,14 @@ import { Server } from 'http';
 import 'express-async-errors';
 import app from './app';
 import logger from './helpers/logger';
+import { telegramService } from './services';
 
 // setting up server
 const PORT = process.env.PORT || 5000;
 
 const server: Server = app.listen(PORT, async () => {
   logger.info(`Server running on port ${PORT}`);
+  telegramService.startBot();
 });
 
 // handle unhanled promise rejections

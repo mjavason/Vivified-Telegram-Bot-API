@@ -6,6 +6,7 @@ export const CORS_ORIGIN = process.env.CORS_ORIGIN || '*';
 export const MAIL_ADDRESS = process.env.MAIL_ADDRESS || 'michaelorji@mail.com';
 export const MAIL_PASSWORD = process.env.MAIL_PASSWORD || 'xxxx';
 export const SITE_LINK = process.env.SITE_LINK || 'http://localhost:5000';
+export const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || 'telegram_bot_token';
 
 export const STATUS_CODES = {
   SUCCESS: '10000',

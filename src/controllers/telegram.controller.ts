@@ -275,6 +275,7 @@ class Controller {
     telegramJackets(bot);
     telegramSignOutBundles(bot);
     telegramPrints(bot);
+    telegramOrders(bot);
 
     telegramChat(bot);
 

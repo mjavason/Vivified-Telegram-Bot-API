@@ -10,17 +10,21 @@ const bot: Telegraf = new Telegraf(TELEGRAM_BOT_TOKEN);
 
 function telegramWelcomeCommand(bot: Telegraf) {
   bot.command('start', (ctx) => {
-    const message = `Hello there! Welcome to the Vivified telegram bot.\nI respond to the following commands:
+    ctx.sendChatAction('typing');
+
+    setTimeout(() => {
+      const message = `Hello there! Welcome to the Vivified telegram bot.\nI respond to the following commands:
 /shirts - View available shirts
 /jackets - View available jackets
-/sobs - View our specialized sign-out products
+/sobs - View our specialized sign-out-bundle products
 /prints - We provide jackets and t-shirts, send us your preferred write-up and where you want it to appear
 /order - Place an order
 /testimonials - View testimonials from our happy customers\n\n
 You can also interact by sending regular text. If you'd like to place an order, use the /order command.`;
 
-    console.log(ctx.from);
-    bot.telegram.sendMessage(ctx.chat.id, message, {});
+      console.log(ctx.from);
+      ctx.reply(message);
+    }, 1000); // Adjust the timeout duration as needed
   });
 }
 
@@ -46,7 +50,7 @@ function telegramGetEthereumPriceCommand(bot: Telegraf) {
         } else {
           const { usd } = ethereum;
           const message = `Hello, today the ethereum price is ${usd} USD`;
-          bot.telegram.sendMessage(ctx.chat.id, message, {});
+          ctx.reply(message);
         }
       });
   });
@@ -63,7 +67,8 @@ function telegramHelpCommand(bot: Telegraf) {
     /prints - We provide the jackets and t-shirts, send us your preferred write-up and where you want it to appear\n
     /order - Place an order\n
     /testimonials - View testimonials from our happy customers`;
-    bot.telegram.sendMessage(ctx.chat.id, message, {});
+
+    ctx.reply(message);
   });
 }
 
@@ -79,16 +84,16 @@ function telegramChat(bot: Telegraf) {
         // setTimeout(function () {
         // console.log('This code will run after 2 seconds.');
         if (!data) {
-          bot.telegram.sendMessage(ctx.chat.id, 'Sorry could you rephrase that');
+          ctx.reply('Sorry could you rephrase that');
           return;
         }
 
-        bot.telegram.sendMessage(ctx.chat.id, data);
+        ctx.reply(data);
         // }, 2000);
       });
     } else {
       // Handle the case where 'text' is missing in req.body
-      bot.telegram.sendMessage(ctx.chat.id, `I'm listening`);
+      ctx.reply(`I'm listening`);
     }
   });
 }

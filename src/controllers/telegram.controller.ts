@@ -13,14 +13,16 @@ function telegramWelcomeCommand(bot: Telegraf) {
     ctx.sendChatAction('typing');
 
     setTimeout(() => {
-      const message = `Hello there! Welcome to the Vivified telegram bot.\nI respond to the following commands:
-/shirts - View available shirts
+      const message = `Hello there! Welcome to the Vivified telegram bot: Your sure plug for providing high-quality clothing at budget-friendly prices\nI respond to the following commands:
+/contact - Get contact information
 /jackets - View available jackets
-/sobs - View our specialized sign-out-bundle products
-/prints - We provide jackets and t-shirts, send us your preferred write-up and where you want it to appear
+/help - Request help information
 /order - Place an order
+/prints - We provide jackets and t-shirts, send us your preferred write-up and where you want it to appear
+/shirts - View available shirts
+/sobs - View our specialized sign-out-bundle products
 /testimonials - View testimonials from our happy customers\n\n
-You can also interact by sending regular text. If you'd like to place an order, use the /order command.`;
+You can also interact by sending regular text. Enjoy!`;
 
       console.log(ctx.from);
       ctx.reply(message);
@@ -61,11 +63,12 @@ function telegramHelpCommand(bot: Telegraf) {
     ctx.sendChatAction('typing');
 
     const message = `Need assistance? Feel free to ask questions or request help. You can also explore the available commands:\n
-    /shirts - View shirts\n
+    /contact - Get contact information\n
     /jackets - View jackets\n
-    /sobs - View our specialized sign-out products\n
-    /prints - We provide the jackets and t-shirts, send us your preferred write-up and where you want it to appear\n
     /order - Place an order\n
+    /prints - We provide the jackets and t-shirts, send us your preferred write-up and where you want it to appear\n
+    /shirts - View shirts\n
+    /sobs - View our specialized sign-out products\n
     /testimonials - View testimonials from our happy customers`;
 
     ctx.reply(message);
@@ -252,7 +255,7 @@ function telegramPrints(bot: Telegraf) {
 }
 
 function telegramContact(bot: Telegraf) {
-  bot.command('prints', (ctx) => {
+  bot.command('contact', (ctx) => {
     ctx.sendChatAction('typing');
 
     const message1 = 'To contact Vivified, use the phone numbers 08062223221 or 08031152342.';

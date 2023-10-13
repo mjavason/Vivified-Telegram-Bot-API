@@ -1,3 +1,5 @@
+import logger from '../helpers/logger';
+
 const { containerBootstrap } = require('@nlpjs/core-loader');
 const { Nlp } = require('@nlpjs/nlp');
 const { LangEn } = require('@nlpjs/lang-en-min');
@@ -38,6 +40,8 @@ export async function converse(userInput: string) {
   const response = await nlp.process('en', userInput);
 
   if (!response || response.intent === 'None') {
+    logger.info(`Question: '${userInput}' not covered by knowledge base`);
+
     // If no intent was detected use the fallback intent
     return await getFallbackResponse();
   }
@@ -49,11 +53,10 @@ export async function converse(userInput: string) {
 }
 
 async function getFallbackResponse() {
-  // Implement logic to select a response from the "Fallback" intent
   const fallbackResponses = [
-    'Could you please rephrase that?',
-    "I didn't quite understand. Can you try again?",
-    "I'm sorry, I couldn't understand your request.",
+    "I'm sorry, I couldn't quite catch that. Could you rephrase your question or ask something else?",
+    "Apologies, I didn't understand your request. Please try rephrasing it or ask something else",
+    "I'm having trouble understanding. Can you ask in a different way or ask something else?",
   ];
   const randomResponse = fallbackResponses[Math.floor(Math.random() * fallbackResponses.length)];
   return randomResponse;

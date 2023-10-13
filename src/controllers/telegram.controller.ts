@@ -24,7 +24,7 @@ You can also interact by sending regular text. If you'd like to place an order, 
 
       console.log(ctx.from);
       ctx.reply(message);
-    }, 1000); // Adjust the timeout duration as needed
+    }, 5000); // Adjust the timeout duration as needed
   });
 }
 
@@ -81,15 +81,17 @@ function telegramChat(bot: Telegraf) {
 
     if (userText) {
       converse(userText).then((data: string) => {
-        // setTimeout(function () {
-        // console.log('This code will run after 2 seconds.');
-        if (!data) {
-          ctx.reply('Sorry could you rephrase that');
-          return;
-        }
+        setTimeout(function () {
+          // console.log('This code will run after 2 seconds.');
+          if (!data) {
+            ctx.reply(
+              "I'm sorry, but I don't have the information to answer that. Please try rephrasing your question or ask something else.",
+            );
+            return;
+          }
 
-        ctx.reply(data);
-        // }, 2000);
+          ctx.reply(data);
+        }, 2000);
       });
     } else {
       // Handle the case where 'text' is missing in req.body
@@ -150,7 +152,12 @@ function telegramShirts(bot: Telegraf) {
             // Send the image
             bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath3 }).then(() => {
               // Send the text message
-              bot.telegram.sendMessage(ctx.chat.id, message3);
+              bot.telegram.sendMessage(ctx.chat.id, message3).then(() => {
+                bot.telegram.sendMessage(
+                  ctx.chat.id,
+                  `To order please use the /order command, followed by the product ID. eg: /order 001.`,
+                );
+              });
             });
           });
         });
@@ -182,7 +189,12 @@ function telegramJackets(bot: Telegraf) {
             // Send the image
             bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath3 }).then(() => {
               // Send the text message
-              bot.telegram.sendMessage(ctx.chat.id, message3);
+              bot.telegram.sendMessage(ctx.chat.id, message3).then(() => {
+                bot.telegram.sendMessage(
+                  ctx.chat.id,
+                  `To order please use the /order command, followed by the product ID. eg: /order 001.`,
+                );
+              });
             });
           });
         });
@@ -192,7 +204,7 @@ function telegramJackets(bot: Telegraf) {
 }
 
 function telegramSignOutBundles(bot: Telegraf) {
-  bot.command('sobundles', (ctx) => {
+  bot.command('sobs', (ctx) => {
     ctx.sendChatAction('typing');
 
     const message1 = `(ID: 201)\nOur Sign-Out Bundle 1 includes a comfy shirt, stylish jacket, and a personalized tote bag - everything you need for a complete look!`;
@@ -214,7 +226,12 @@ function telegramSignOutBundles(bot: Telegraf) {
             // Send the image
             bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath3 }).then(() => {
               // Send the text message
-              bot.telegram.sendMessage(ctx.chat.id, message3);
+              bot.telegram.sendMessage(ctx.chat.id, message3).then(() => {
+                bot.telegram.sendMessage(
+                  ctx.chat.id,
+                  `To order please use the /order command, followed by the product ID. eg: /order 001.`,
+                );
+              });
             });
           });
         });

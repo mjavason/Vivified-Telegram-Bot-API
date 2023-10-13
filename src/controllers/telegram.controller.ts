@@ -4,7 +4,7 @@ import { Telegraf } from 'telegraf';
 import { TELEGRAM_BOT_TOKEN } from '../constants';
 import ApiService from '../services/api.service';
 import { converse } from './robot.controller';
-const { InputMediaPhoto } = require('telegraf');
+const { fromLocalFile } = require('telegraf');
 
 const bot: Telegraf = new Telegraf(TELEGRAM_BOT_TOKEN);
 
@@ -88,27 +88,28 @@ function telegramChat(bot: Telegraf) {
 }
 
 function telegramTestimonials(bot: Telegraf) {
-  const message = `Their rep. came and told me how they needed a bulk quantity of polos within 24hrs (which I had an issue with how short the deadline was but I also was in dire need of money). They were skeptical on the quality and the blackness of the polo \n\n
-
-    I assured them, they didn't have to bother about those, that the only ish was the deadline they gave me. They pleaded that I should help them ensure it worked cos they had a program. I said ok, collected money and went on with the production of the tees. Guess wat!\n\n
-
-    I delivered right on time. They were happy not only for meeting up with their schedules; they also loved the quality of the cloth and how black it was. In the end, everyone was happy cos I was happy I made them happy😁
-    `;
+  const message = `Their representative came and told me how they needed a bulk quantity of polos within 24 hours (which I had an issue with due to the short deadline but I also needed the money). They were skeptical about the quality and the color of the polos.\n\nI assured them that they didn't have to worry about those issues and that the only problem was the tight deadline they gave me. They pleaded for my help to ensure it worked because they had an upcoming program. I agreed, collected the money, and proceeded with the production of the tees. Guess what!\n\nI delivered right on time. They were not only happy for meeting their schedule but also loved the quality of the fabric and how black it was. In the end, everyone was happy, and I was happy that I made them happy 😁`;
 
   bot.command('testimonials', (ctx) => {
-    const images = [
-      new InputMediaPhoto({ media: 'public/testimonials/t1.jfif' }),
-      new InputMediaPhoto({ media: 'public/testimonials/t2.jfif' }),
-      new InputMediaPhoto({ media: 'public/testimonials/t3.jfif' }),
-      new InputMediaPhoto({ media: 'public/testimonials/t4.jfif' }),
-      // Add more images with captions as needed
-    ];
+    // const images = [
+    //   'public/testimonials/t1.jfif',
+    //   'public/testimonials/t2.jfif',
+    //   'public/testimonials/t3.jfif',
+    //   'public/testimonials/t4.jfif',
+    //   // Add more image paths as needed
+    // ];
 
-    // Send the text message
-    bot.telegram.sendMessage(ctx.chat.id, message);
+    // for (const imagePath of images) {
+    //   ctx.replyWithPhoto({ source: imagePath });
+    // }
 
-    // Send the album
-    bot.telegram.sendMediaGroup(ctx.chat.id, images);
+    const imageFilePath = 'public/testimonials/t3.jfif';
+
+    // Send the image
+    bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath }).then(() => {
+      // Send the text message
+      bot.telegram.sendMessage(ctx.chat.id, message);
+    });
   });
 }
 
@@ -123,8 +124,8 @@ class Controller {
     telegramWelcomeCommand(bot);
     // telegramGetEthereumPriceCommand(bot);
     telegramHelpCommand(bot);
-    telegramChat(bot);
     telegramTestimonials(bot);
+    telegramChat(bot);
 
     bot.launch();
   }

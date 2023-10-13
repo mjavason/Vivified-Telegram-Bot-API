@@ -1,0 +1,39 @@
+{
+  "intents": [
+    {
+      "intent": "GetWeather",
+      "utterances": [
+        "What's the weather like today?",
+        "Tell me the forecast.",
+        "Is it going to rain tomorrow?"
+      ],
+      "answers": [
+        "The weather today is sunny.",
+        "Here's the forecast for today...",
+        "Yes, it's expected to rain tomorrow."
+      ]
+    },
+    {
+      "intent": "SetLocation",
+      "utterances": [
+        "Change my location to Paris.",
+        "Set my city to New York.",
+        "Update location to London."
+      ],
+      "answers": [
+        "Your location has been updated to Paris.",
+        "New York is now your city of choice.",
+        "You are now in London."
+      ]
+    },
+    {
+      "intent": "Greetings",
+      "utterances": ["Hello!", "Hi there.", "Good day."],
+      "answers": [
+        "Hello! How can I assist you today?",
+        "Hi there! How can I help?",
+        "Good morning! What can I do for you?"
+      ]
+    }
+  ]
+}

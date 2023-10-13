@@ -5,4 +5,3 @@
 
 export * from './api.service';
 export { mailService } from './mail.service';
-export { telegramService } from './telegram.service';

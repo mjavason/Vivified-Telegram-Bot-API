@@ -1,0 +1,496 @@
+{
+  "intents": [
+    {
+      "intent": "Greeting",
+      "utterances": [
+        "Hello",
+        "Hi",
+        "Good day",
+        "Greetings",
+        "Hiya",
+        "How are you?",
+        "How's it going?",
+        "How are things?",
+        "How's everything?",
+        "What's up?",
+        "Long time no see",
+        "Hey there",
+        "Hey"
+      ],
+      "answers": [
+        "Hello! How can I assist you today?",
+        "Hi there! How can I help?",
+        "Good day! What can I do for you?",
+        "Welcome! How can I assist you?",
+        "Greetings! How can I be of service?",
+        "Hiya! How can I assist you today?",
+        "How are you? How can I help?",
+        "How's it going? What can I do for you?",
+        "How are things? How can I assist you?",
+        "How's everything? How can I help?",
+        "What's up? How can I assist you today?",
+        "Nice to meet you! How can I help?",
+        "Hey there! How can I assist you?",
+        "Hey! How can I be of service?",
+        "Hi, how can I assist you today?"
+      ]
+    },
+    {
+      "intent": "Goodbye",
+      "utterances": [
+        "Goodbye",
+        "See you later",
+        "Farewell",
+        "Bye",
+        "Take care",
+        "Have a great day",
+        "Until next time",
+        "Adios",
+        "Catch you later",
+        "So long"
+      ],
+      "answers": [
+        "Goodbye! Have a great day!",
+        "See you later! Take care!",
+        "Farewell! Until next time!",
+        "Bye! Have a wonderful day!",
+        "Take care! Goodbye!",
+        "Have a great day! See you later!",
+        "Until next time! Take care!",
+        "Adios! Have a wonderful day!",
+        "Catch you later! Goodbye!",
+        "So long! Until we meet again!"
+      ]
+    },
+
+    {
+      "intent": "MenuInquiry",
+      "utterances": ["What's on the menu?", "Tell me about your dishes", "What do you serve?"],
+      "answers": [
+        "At Ntachi Osa Restaurant, we offer a diverse and delicious menu. Here's a glimpse of what we serve: Egusi Soup, Jollof Rice, Banga Stew Rice, Draw Soup, White Rice & Stew, Fried Chicken, Fried Fish, Moi-Moi, Yam & Egg Sauce, Goat Meat, Cow Leg, Fried Plantain, Achicha / Fiofio, Porridge Plantain, Vegetable Soup with Garri and Mix Meat, Ukwa with Fish, Stick Beef, Ora Soup, Moi-Moi with Fish, Fio-Fio with Fish, Beans, Plantain with Fish, White Yam & Egg Sauce, Single Fried or Boiled Fish, Bitter Leaf Soup with 2 Pieces of Meat, Fried Rice with Chicken and Salad."
+      ]
+    },
+
+    {
+      "intent": "OrderFood",
+      "utterances": ["I'd like to order", "Can I place an order?", "Order food for me"],
+      "answers": [
+        "Of course! What would you like to order?",
+        "Certainly, please let me know your order?"
+      ]
+    },
+    {
+      "intent": "ContactInformation",
+      "utterances": [
+        "How can I contact you?",
+        "Give me your phone number",
+        "What's your email address?"
+      ],
+      "answers": [
+        "You can reach us at 08063313480 or 08034936435.",
+        "Our phone numbers are 08063313480 and 08034936435.",
+        "Feel free to email us at hello@ntachiosa.com."
+      ]
+    },
+    {
+      "intent": "EgusiInquiry",
+      "utterances": [
+        "Tell me about Egusi Soup with Semo",
+        "What's the price of Egusi Soup?",
+        "I want to know more about Egusi Soup"
+      ],
+      "answers": [
+        "Egusi Soup with Semo is priced at ₦1,750.00 and includes water and take away.",
+        "Egusi Soup is a flavorful and satisfying choice, priced at ₦1,750.00 and includes water and take away.",
+        "Here are the details for Egusi Soup: it's priced at ₦1,750.00 and includes water and take away."
+      ]
+    },
+    {
+      "intent": "BeefInquiry",
+      "utterances": [
+        "Tell me about A Piece of Beef",
+        "What's the price of Beef?",
+        "I want to know more about Beef"
+      ],
+      "answers": [
+        "A Piece of Beef is available for ₦200.00.",
+        "Our Beef is tender and savory, and is available for ₦200.00.",
+        "Here are the details for Beef. Price: ₦200.00."
+      ]
+    },
+    {
+      "intent": "BeansInquiry",
+      "utterances": [
+        "Tell me about Beans",
+        "What's the price of Beans?",
+        "I want to know more about Beans"
+      ],
+      "answers": [
+        "Beans is priced at ₦900.00.",
+        "Our Beans is a hearty and nutritious choice and is priced at ₦900.00.",
+        "Here are the details for Beans. Price: ₦900.00."
+      ]
+    },
+    {
+      "intent": "JollofRiceInquiry",
+      "utterances": [
+        "Tell me about Jollof Rice without meat",
+        "What's the price of Jollof Rice?",
+        "I want to know more about Jollof Rice"
+      ],
+      "answers": [
+        "Jollof Rice without meat is priced at ₦900.00 and includes water and take away.",
+        "Jollof Rice is a delicious and satisfying dish and is priced at ₦900.00, it also includes water and take away.",
+        "Here are the details for Jollof Rice. Price: ₦900.00 and includes water and take away."
+      ]
+    },
+    {
+      "intent": "PlantainInquiry",
+      "utterances": [
+        "Tell me about Portion of Fried Plantain",
+        "What's the price of Fried Plantain?",
+        "I want to know more about Fried Plantain"
+      ],
+      "answers": [
+        "Portion of Fried Plantain is priced at ₦300.00.",
+        "Our Fried Plantain is crispy and delightful, priced at ₦300.00.",
+        "Here are the details for Fried Plantain, priced at ₦300.00."
+      ]
+    },
+    {
+      "intent": "AchichaInquiry",
+      "utterances": [
+        "Tell me about Achicha / Fiofio without meat",
+        "What's the price of Achicha?",
+        "I want to know more about Achicha"
+      ],
+      "answers": [
+        "Achicha / Fiofio without meat is priced at ₦1,100.00 and includes water and take away.",
+        "Achicha is a satisfying and flavorful choice, priced at ₦1,100.00.",
+        "Here are the details for Achicha, priced at ₦1,100.00."
+      ]
+    },
+    {
+      "intent": "FriedRiceInquiry",
+      "utterances": [
+        "Tell me about Fried Rice without meat",
+        "What's the price of Fried Rice?",
+        "I want to know more about Fried Rice"
+      ],
+      "answers": [
+        "Fried Rice without meat is priced at ₦1,000.00 and includes water and take away.",
+        "Fried Rice is a delicious and satisfying choice, priced at ₦1,000.00.",
+        "Here are the details for Fried Rice, priced at ₦1,000.00."
+      ]
+    },
+    {
+      "intent": "SalladInquiry",
+      "utterances": [
+        "Tell me about Sallad",
+        "What's the price of Sallad?",
+        "I want to know more about Sallad"
+      ],
+      "answers": [
+        "Sallad is priced at ₦600.00.",
+        "Our Sallad is fresh and delightful, priced at ₦600.00.",
+        "Here are the details for Sallad, priced at ₦600.00."
+      ]
+    },
+    {
+      "intent": "WhiteSoupInquiry",
+      "utterances": [
+        "Tell me about White Soup and semo",
+        "What's the price of White Soup?",
+        "I want to know more about White Soup"
+      ],
+      "answers": [
+        "White Soup and semo is priced at ₦2,300.00 and includes water and take away.",
+        "White Soup is a nutritious and flavorful choice, priced at ₦2,300.00.",
+        "Here are the details for White Soup, priced at ₦2,300.00."
+      ]
+    },
+    {
+      "intent": "PorridgePlantainInquiry",
+      "utterances": [
+        "Tell me about Unripe Porridge Plantain",
+        "What's the price of Porridge Plantain?",
+        "I want to know more about Porridge Plantain"
+      ],
+      "answers": [
+        "Unripe Porridge Plantain is priced at ₦1,100.00.",
+        "Our Porridge Plantain is delicious and satisfying, priced at ₦1,100.00.",
+        "Here are the details for Porridge Plantain, priced at ₦1,100.00."
+      ]
+    },
+    {
+      "intent": "MoiMoiInquiry",
+      "utterances": [
+        "Tell me about Moi-Moi",
+        "What's the price of Moi-Moi?",
+        "I want to know more about Moi-Moi"
+      ],
+      "answers": [
+        "Moi-Moi is priced at ₦400.00.",
+        "Our Moi-Moi is a tasty and nutritious choice, priced at ₦400.00.",
+        "Here are the details for Moi-Moi, priced at ₦400.00."
+      ]
+    },
+    {
+      "intent": "YamEggSauceInquiry",
+      "utterances": [
+        "Tell me about White Yam & Egg Sauce",
+        "What's the price of Yam & Egg Sauce?",
+        "I want to know more about Yam & Egg Sauce"
+      ],
+      "answers": [
+        "White Yam & Egg Sauce is priced at ₦1,150.00 and includes water and take away.",
+        "Yam & Egg Sauce is a delightful and satisfying dish, priced at ₦1,150.00.",
+        "Here are the details for Yam & Egg Sauce, priced at ₦1,150.00."
+      ]
+    },
+    {
+      "intent": "GoatMeatInquiry",
+      "utterances": [
+        "Tell me about Piece of Goat Meat",
+        "What's the price of Goat Meat?",
+        "I want to know more about Goat Meat"
+      ],
+      "answers": [
+        "Piece of Goat Meat is available for ₦700.00.",
+        "Our Goat Meat is tender and savory, priced at ₦700.00.",
+        "Here are the details for Goat Meat, priced at ₦700.00."
+      ]
+    },
+    {
+      "intent": "CowLegInquiry",
+      "utterances": [
+        "Tell me about Piece of Cow Leg",
+        "What's the price of Cow Leg?",
+        "I want to know more about Cow Leg"
+      ],
+      "answers": [
+        "Piece of Cow Leg is available for ₦600.00.",
+        "Our Cow Leg is tender and delicious, priced at ₦600.00.",
+        "Here are the details for Cow Leg, priced at ₦600.00."
+      ]
+    },
+    {
+      "intent": "MoiMoiFishInquiry",
+      "utterances": [
+        "Tell me about Moi -Moi , 2 Portions of Plantain with Fish",
+        "What's the price of Moi-Moi with Fish?",
+        "I want to know more about Moi-Moi with Fish"
+      ],
+      "answers": [
+        "Moi -Moi , 2 Portions of Plantain with Fish is priced at ₦2,300.00.",
+        "Our Moi-Moi with Fish is a delightful and satisfying choice, priced at ₦2,300.00.",
+        "Here are the details for Moi-Moi with Fish, priced at ₦2,300.00."
+      ]
+    },
+    {
+      "intent": "FioFioFishInquiry",
+      "utterances": [
+        "Tell me about Fio-Fio with Fish",
+        "What's the price of Fio-Fio with Fish?",
+        "I want to know more about Fio-Fio with Fish"
+      ],
+      "answers": [
+        "Fio-Fio with Fish is priced at ₦2,500.00 and includes water and take away.",
+        "Fio-Fio with Fish is a flavorful and satisfying choice, priced at ₦2,500.00.",
+        "Here are the details for Fio-Fio with Fish, priced at ₦2,500.00."
+      ]
+    },
+    {
+      "intent": "FriedFishInquiry",
+      "utterances": [
+        "Tell me about Fried Fish",
+        "What's the price of Fried Fish?",
+        "I want to know more about Fried Fish"
+      ],
+      "answers": [
+        "Fried Fish is available for ₦1,500.00.",
+        "Our Fried Fish is crispy and delicious, priced at ₦1,500.00.",
+        "Here are the details for Fried Fish, priced at ₦1,500.00."
+      ]
+    },
+    {
+      "intent": "FriedChickenInquiry",
+      "utterances": [
+        "Tell me about Fried Chicken",
+        "What's the price of Fried Chicken?",
+        "I want to know more about Fried Chicken"
+      ],
+      "answers": [
+        "Fried Chicken is available for ₦1,500.00.",
+        "Our Fried Chicken is crispy and delightful, priced at ₦1,500.00.",
+        "Here are the details for Fried Chicken, priced at ₦1,500.00."
+      ]
+    },
+    {
+      "intent": "VegetableSoupInquiry",
+      "utterances": [
+        "Tell me about Vegetable Soup with Garri and Mix Meat",
+        "What's the price of Vegetable Soup?",
+        "I want to know more about Vegetable Soup"
+      ],
+      "answers": [
+        "Vegetable Soup with Garri and Mix Meat is priced at ₦2,150.00 and includes water and take away.",
+        "Vegetable Soup with Mix Meat is a delicious choice, priced at ₦2,150.00.",
+        "Here are the details for Vegetable Soup, priced at ₦2,150.00."
+      ]
+    },
+    {
+      "intent": "UkwaFishInquiry",
+      "utterances": [
+        "Tell me about Ukwa with Fish",
+        "What's the price of Ukwa with Fish?",
+        "I want to know more about Ukwa with Fish"
+      ],
+      "answers": [
+        "Ukwa with Fish is priced at ₦3,400.00 and includes water and take away.",
+        "Ukwa with Fish is a flavorful and satisfying choice, priced at ₦3,400.00.",
+        "Here are the details for Ukwa with Fish, priced at ₦3,400.00."
+      ]
+    },
+    {
+      "intent": "StickBeefInquiry",
+      "utterances": [
+        "Tell me about Stick Beef",
+        "What's the price of Stick Beef?",
+        "I want to know more about Stick Beef"
+      ],
+      "answers": [
+        "Stick Beef is available for ₦900.00.",
+        "Our Stick Beef is tender and savory, priced at ₦900.00.",
+        "Here are the details for Stick Beef, priced at ₦900.00."
+      ]
+    },
+    {
+      "intent": "OraSoupInquiry",
+      "utterances": [
+        "Tell me about Ora Soup, 2 Pieces of Meat & Garri",
+        "What's the price of Ora Soup?",
+        "I want to know more about Ora Soup"
+      ],
+      "answers": [
+        "Ora Soup, 2 Pieces of Meat & Garri is priced at ₦1,750.00 and includes water and take away.",
+        "Ora Soup is a delicious choice, priced at ₦1,750.00.",
+        "Here are the details for Ora Soup, priced at ₦1,750.00."
+      ]
+    },
+    {
+      "intent": "FriedRiceChickenSaladInquiry",
+      "utterances": [
+        "Tell me about Fried Rice with Chicken and Salad",
+        "What's the price of Fried Rice with Chicken?",
+        "I want to know more about Fried Rice with Chicken"
+      ],
+      "answers": [
+        "Fried Rice with Chicken and Salad is priced at ₦3,100.00 and includes take away.",
+        "Fried Rice with Chicken and Salad is a delightful choice, priced at ₦3,100.00.",
+        "Here are the details for Fried Rice with Chicken and Salad, priced at ₦3,100.00."
+      ]
+    },
+    {
+      "intent": "DrawSoupInquiry",
+      "utterances": [
+        "Tell me about Draw Soup and Semo",
+        "What's the price of Draw Soup?",
+        "I want to know more about Draw Soup"
+      ],
+      "answers": [
+        "Draw Soup and Semo is priced at ₦1,750.00 and includes water and take away.",
+        "Draw Soup is a flavorful choice, priced at ₦1,750.00.",
+        "Here are the details for Draw Soup, priced at ₦1,750.00."
+      ]
+    },
+    {
+      "intent": "FriedBoiledFishInquiry",
+      "utterances": [
+        "Tell me about Single Fried or Boiled Fish",
+        "What's the price of Fried or Boiled Fish?",
+        "I want to know more about Fried or Boiled Fish"
+      ],
+      "answers": [
+        "Single Fried or Boiled Fish is available for ₦1,400.00.",
+        "Our Fried or Boiled Fish is crispy and delightful, priced at ₦1,400.00.",
+        "Here are the details for Fried or Boiled Fish, priced at ₦1,400.00."
+      ]
+    },
+    {
+      "intent": "BitterLeafSoupInquiry",
+      "utterances": [
+        "Tell me about Bitter Leaf Soup and Garri with 2 Pieces of Meat",
+        "What's the price of Bitter Leaf Soup?",
+        "I want to know more about Bitter Leaf Soup"
+      ],
+      "answers": [
+        "Bitter Leaf Soup and Garri with 2 Pieces of Meat is priced at ₦1,750.00 and includes water and take away.",
+        "Bitter Leaf Soup is a delicious choice, priced at ₦1,750.00.",
+        "Here are the details for Bitter Leaf Soup, priced at ₦1,750.00."
+      ]
+    },
+    {
+      "intent": "BeansPlantainFishInquiry",
+      "utterances": [
+        "Tell me about Beans, Plantain with Fish",
+        "What's the price of Beans, Plantain with Fish?",
+        "I want to know more about Beans, Plantain with Fish"
+      ],
+      "answers": [
+        "Beans, Plantain with Fish is priced at ₦2,600.00.",
+        "Our Beans, Plantain with Fish is a delicious and satisfying choice, priced at ₦2,600.00.",
+        "Here are the details for Beans, Plantain with Fish, priced at ₦2,600.00."
+      ]
+    },
+    {
+      "intent": "WhiteRiceStewInquiry",
+      "utterances": [
+        "Tell me about White Rice & Stew",
+        "What's the price of White Rice & Stew?",
+        "I want to know more about White Rice & Stew"
+      ],
+      "answers": [
+        "White Rice & Stew is priced at ₦1,450.00 and includes 2 Meats and take away.",
+        "White Rice & Stew is a delightful choice, priced at ₦1,450.00.",
+        "Here are the details for White Rice & Stew, priced at ₦1,450.00."
+      ]
+    },
+    {
+      "intent": "BangaStewInquiry",
+      "utterances": [
+        "Tell me about White Rice & Banga Stew with 2 Pieces of Meat",
+        "What's the price of Banga Stew?",
+        "I want to know more about Banga Stew"
+      ],
+      "answers": [
+        "White Rice & Banga Stew with 2 Pieces of Meat is priced at ₦1,450.00.",
+        "Banga Stew is a flavorful and satisfying choice, priced at ₦1,450.00.",
+        "Here are the details for Banga Stew, priced at ₦1,450.00."
+      ]
+    },
+
+    {
+      "intent": "ChickenSauceInquiry",
+      "utterances": [
+        "Tell me about White Rice and Chicken Sauce",
+        "What's the price of Chicken Sauce?",
+        "I want to know more about Chicken Sauce"
+      ],
+      "answers": [
+        "White Rice and Chicken Sauce is priced at ₦2,500.00.",
+        "Chicken Sauce is a delightful and flavorful choice and is priced at ₦2,500.00.",
+        "Here are the details for Chicken Sauce..."
+      ]
+    },
+    {
+      "intent": "Fallback",
+      "utterances": ["I don't understand", "What?", "Please repeat", "Could you rephrase"],
+      "answers": [
+        "Could you please rephrase your question?",
+        "I didn't quite catch that. Can you repeat or rephrase it?",
+        "Sorry, I didn't understand. Please rephrase your question."
+      ]
+    }
+  ]
+}

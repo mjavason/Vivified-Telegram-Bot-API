@@ -3,38 +3,41 @@
     {
       "intent": "Greeting",
       "utterances": [
-        "Hello",
-        "Hi",
-        "Good day",
-        "Greetings",
-        "Hiya",
-        "How are you?",
-        "How's it going?",
-        "How are things?",
-        "How's everything?",
-        "What's up?",
-        "Long time no see",
-        "Hey there",
-        "Hey"
+        "Good day, how have you been?",
+        "Hi there, how's your day going?",
+        "Hello, it's nice to see you again!",
+        "Hey, what's new in your world?",
+        "Greetings, how's life treating you?",
+        "Hello, how's your day unfolding?",
+        "Hi, any exciting plans for today?",
+        "Hey there, how's everything on your side?",
+        "Hello, how's your mood today?",
+        "Hi, did you have a great morning?",
+        "Hey, is there something special today?",
+        "Hello, how's your week so far?",
+        "Hi there, what's on your agenda?",
+        "Greetings, how can I assist you today?",
+        "Hello, is there anything I can help with?"
       ],
       "answers": [
         "Hello! How can I assist you today?",
-        "Hi there! How can I help?",
-        "Good day! What can I do for you?",
-        "Welcome! How can I assist you?",
+        "Hi there! What can I do for you?",
+        "Hey, how's it going? How can I help?",
         "Greetings! How can I be of service?",
-        "Hiya! How can I assist you today?",
-        "How are you? How can I help?",
-        "How's it going? What can I do for you?",
-        "How are things? How can I assist you?",
-        "How's everything? How can I help?",
-        "What's up? How can I assist you today?",
-        "Nice to meet you! How can I help?",
-        "Hey there! How can I assist you?",
-        "Hey! How can I be of service?",
-        "Hi, how can I assist you today?"
+        "Hello, how's your day so far? How can I assist you?",
+        "Hi, is there something I can assist you with? How can I help?",
+        "Hey there, what's on your mind? How can I assist you?",
+        "Hi, what's the latest? How can I help?",
+        "Hello, how can I make your day better? How can I assist you?",
+        "Hi, what's cooking? How can I assist you?",
+        "Hello, how's your world today? How can I assist you?",
+        "Hey, is there something you'd like to know? How can I assist you?",
+        "Hello, what brings you here? How can I assist you?",
+        "Hello! How can I help you today?",
+        "Hi there! How can I be of service?"
       ]
     },
+
     {
       "intent": "Goodbye",
       "utterances": [
@@ -47,7 +50,57 @@
         "Until next time",
         "Adios",
         "Catch you later",
-        "So long"
+        "So long",
+        "See you next time",
+        "Take it easy",
+        "Adieu",
+        "Take care of yourself",
+        "Fare thee well",
+        "Until we meet again",
+        "Farewell, my friend",
+        "Goodbye, for now",
+        "Have a safe journey",
+        "Bye, take care",
+        "Wishing you the best",
+        "Catch you later, alligator",
+        "See you in a while, crocodile",
+        "Goodbye, my friend",
+        "Parting is such sweet sorrow",
+        "See you on the flip side",
+        "Later, gator",
+        "Time to bid farewell",
+        "It's been a pleasure",
+        "Until the next time we meet",
+        "Adios, amigo",
+        "Peace out",
+        "Au revoir",
+        "Take good care",
+        "Till we cross paths again",
+        "Fond farewell",
+        "Be well",
+        "Goodbye, with a smile",
+        "Safe travels ahead",
+        "Happy trails",
+        "Goodbye, my dear",
+        "With warm regards",
+        "Take care, friend",
+        "Until our next encounter",
+        "Fare thee well, my friend",
+        "With best wishes",
+        "Time to say adios",
+        "Saying goodbye with gratitude",
+        "Sending you good vibes",
+        "May your journey be smooth",
+        "Goodbye, until next time",
+        "In peace, we part",
+        "Until we meet again, take care",
+        "With a heart full of good wishes",
+        "So long, for now",
+        "Fondly saying goodbye",
+        "May our paths cross again",
+        "Leaving with a smile",
+        "Be safe and well",
+        "Till our next rendezvous"
       ],
       "answers": [
         "Goodbye! Have a great day!",
@@ -65,424 +118,172 @@
 
     {
       "intent": "MenuInquiry",
-      "utterances": ["What's on the menu?", "Tell me about your dishes", "What do you serve?"],
+      "utterances": [
+        "What can I find in your store?",
+        "Tell me about your clothing selection.",
+        "What kind of clothes do you have?",
+        "Give me details about your clothing line.",
+        "Show me your product range.",
+        "I'm interested in your products; tell me more.",
+        "What's on your product list?",
+        "Describe your clothing options.",
+        "Share some information about your clothing inventory.",
+        "What's available for purchase?",
+        "Show me your clothing collection.",
+        "Tell me about your fashion offerings."
+      ],
       "answers": [
-        "At Ntachi Osa Restaurant, we offer a diverse and delicious menu. Here's a glimpse of what we serve: Egusi Soup, Jollof Rice, Banga Stew Rice, Draw Soup, White Rice & Stew, Fried Chicken, Fried Fish, Moi-Moi, Yam & Egg Sauce, Goat Meat, Cow Leg, Fried Plantain, Achicha / Fiofio, Porridge Plantain, Vegetable Soup with Garri and Mix Meat, Ukwa with Fish, Stick Beef, Ora Soup, Moi-Moi with Fish, Fio-Fio with Fish, Beans, Plantain with Fish, White Yam & Egg Sauce, Single Fried or Boiled Fish, Bitter Leaf Soup with 2 Pieces of Meat, Fried Rice with Chicken and Salad."
+        "Welcome to Vivified! We specialize in the following clothing categories: shirts, jackets, sign-out bundles, custom prints, and more. Let's explore our fashion offerings.",
+        "Vivified's main offerings include a diverse range of clothing, with a focus on shirts, jackets, and unique sign-out bundles. We also offer custom printing services to personalize your garments.",
+        "At Vivified, we take pride in our clothing line, featuring shirts, jackets, and custom sign-out bundles. You can also request custom prints with your preferred text placement.",
+        "Explore our collection of shirts, jackets, and specialized sign-out products. You can even customize your clothing with our print services. We're here to elevate your style.",
+        "Discover Vivified's extensive product range, which encompasses shirts, jackets, sign-out bundles, and personalized printing options. Your fashion journey starts here.",
+        "We'd love to share more about our products. Our primary offerings include shirts, jackets, and unique sign-out bundles. If you're looking for customization, our print services can help.",
+        "Our product list includes a wide array of clothing, with a focus on shirts, jackets, and specialized sign-out bundles. Personalize your clothing with our custom print options.",
+        "Vivified is known for its impressive clothing inventory, including shirts, jackets, and unique sign-out bundles. If you desire customization, we offer print services as well.",
+        "We're proud of our main offerings, which include shirts, jackets, and specialized sign-out products. Let's dive into the details of what we have to offer.",
+        "Our store is filled with stylish clothing, with a primary focus on shirts, jackets, and personalized sign-out bundles. Discover your fashion favorites at Vivified.",
+        "Step into our fashion world and browse through our impressive clothing collection. Our main offerings include shirts, jackets, and custom sign-out bundles.",
+        "Let us introduce you to the fantastic clothing options available at Vivified. Explore our primary offerings, which encompass shirts, jackets, and personalized printing services."
       ]
     },
 
     {
-      "intent": "OrderFood",
-      "utterances": ["I'd like to order", "Can I place an order?", "Order food for me"],
+      "intent": "Order",
+      "utterances": [
+        "I'd like to place an order",
+        "Can I order some clothing?",
+        "How can I place an order?",
+        "I'm interested in ordering",
+        "Place an order for me"
+      ],
       "answers": [
-        "Of course! What would you like to order?",
-        "Certainly, please let me know your order?"
+        "Absolutely! We're delighted to assist you with your order. Could you please specify the item or items you'd like to order?",
+        "Of course, we're here to help you place your order. What clothing items are you interested in?",
+        "Great choice! Tell us which clothing item you'd like to order, and we'll take it from there.",
+        "Placing an order is easy with Vivified. What specific clothing item are you looking to order today?",
+        "We're ready to assist with your order. Just let us know the clothing item you wish to order, and we'll guide you through the process.",
+        "You've got it! What kind of jackets or shirts would you like to order? Feel free to share your preferences.",
+        "Ordering is a breeze with Vivified. What can we get for you today?"
+      ]
+    },
+
+    {
+      "intent": "Shirts",
+      "utterances": [
+        "I want to see your shirt collection",
+        "What kinds of shirts do you offer?",
+        "Show me your shirt options",
+        "Tell me about the shirts you have",
+        "Shirt selection, please",
+        "I'm looking for shirts",
+        "Shirts available?",
+        "What's in the shirts category?",
+        "Can you show me some shirts?"
+      ],
+      "answers": [
+        "Great! To view available shirts, please use the /shirts command.",
+        "Sure, you can check out our shirt collection by using the /shirts command.",
+        "We have a variety of shirts available. To see our options, simply type /shirts.",
+        "Our shirt selection is quite diverse. You can explore it further with the /shirts command.",
+        "For information about our shirts, use the /shirts command.",
+        "If you're interested in shirts, please type /shirts to see our collection.",
+        "Our range of shirts can be viewed using the /shirts command.",
+        "To check out the shirts we offer, just type /shirts.",
+        "You can explore our available shirts by using the /shirts command."
+      ]
+    },
+    {
+      "intent": "Jackets",
+      "utterances": [
+        "I want to see your jacket collection",
+        "What kinds of jackets do you offer?",
+        "Show me your jacket options",
+        "Tell me about the jackets you have",
+        "Jacket selection, please",
+        "I'm looking for jackets",
+        "Jackets available?",
+        "What's in the jackets category?",
+        "Can you show me some jackets?"
+      ],
+      "answers": [
+        "Certainly! To view available jackets, please use the /jackets command.",
+        "Sure, you can check out our jacket collection by using the /jackets command.",
+        "We have a variety of jackets available. To see our options, simply type /jackets.",
+        "Our jacket selection is quite diverse. You can explore it further with the /jackets command.",
+        "For information about our jackets, use the /jackets command.",
+        "If you're interested in jackets, please type /jackets to see our collection.",
+        "Our range of jackets can be viewed using the /jackets command.",
+        "To check out the jackets we offer, just type /jackets.",
+        "You can explore our available jackets by using the /jackets command."
+      ]
+    },
+    {
+      "intent": "SignOutBundles",
+      "utterances": [
+        "Can you provide information on your sign-out bundles?",
+        "Tell me what sign-out bundles are available",
+        "I'm interested in your sign-out bundles",
+        "Sign-out bundles, please",
+        "What are your sign-out bundles?",
+        "I'd like to know about sign-out bundles",
+        "Share details about sign-out bundles",
+        "Sign-out bundles information"
+      ],
+      "answers": [
+        "Of course! To learn more about our sign-out bundles, please use the /sign-out-bundles command.",
+        "Certainly, you can explore our sign-out bundles by using the /sign-out-bundles command.",
+        "If you're interested in our sign-out bundles, simply type /sign-out-bundles to find out more.",
+        "For information on our sign-out bundles, use the /sign-out-bundles command.",
+        "We have various sign-out bundles available. To see the details, please type /sign-out-bundles.",
+        "To discover our sign-out bundle offerings, please use the /sign-out-bundles command.",
+        "If you'd like to know more about our sign-out bundles, use the /sign-out-bundles command.",
+        "For information on sign-out bundles, you can type /sign-out-bundles."
+      ]
+    },
+    {
+      "intent": "CustomPrints",
+      "utterances": [
+        "Can you provide information on your custom prints?",
+        "Tell me about custom printing options",
+        "I'm looking for custom prints",
+        "Custom prints, please",
+        "What are your custom printing services?",
+        "I'd like to know about custom print designs",
+        "Share details about custom prints",
+        "Custom prints information"
+      ],
+      "answers": [
+        "Certainly! For information on custom prints, please use the /prints command. We offer custom designs for jackets and t-shirts based on your preferences.",
+        "Of course, you can explore our custom print services by using the /prints command. We provide customization for both jackets and t-shirts.",
+        "If you're interested in custom prints, simply type /prints to discover more about our customization options for jackets and t-shirts.",
+        "To learn about our custom printing services, please use the /prints command. We offer personalized designs for both jackets and t-shirts.",
+        "We provide custom print services for jackets and t-shirts. To find out more, use the /prints command.",
+        "To explore our custom print designs, type /prints and discover the options available for jackets and t-shirts.",
+        "For information on custom prints, you can use the /prints command and see how we can personalize jackets and t-shirts as per your preferences.",
+        "Interested in custom prints? Type /prints to learn more about our custom design options for jackets and t-shirts."
       ]
     },
     {
       "intent": "ContactInformation",
       "utterances": [
-        "How can I contact you?",
+        "How can I contact Vivified?",
         "Give me your phone number",
-        "What's your email address?"
+        "What's your email address?",
+        "How do I get in touch with you?",
+        "Tell me your contact details",
+        "I need your contact information"
       ],
       "answers": [
-        "You can reach us at 08063313480 or 08034936435.",
-        "Our phone numbers are 08063313480 and 08034936435.",
-        "Feel free to email us at hello@ntachiosa.com."
-      ]
-    },
-    {
-      "intent": "EgusiInquiry",
-      "utterances": [
-        "Tell me about Egusi Soup with Semo",
-        "What's the price of Egusi Soup?",
-        "I want to know more about Egusi Soup"
-      ],
-      "answers": [
-        "Egusi Soup with Semo is priced at ₦1,750.00 and includes water and take away.",
-        "Egusi Soup is a flavorful and satisfying choice, priced at ₦1,750.00 and includes water and take away.",
-        "Here are the details for Egusi Soup: it's priced at ₦1,750.00 and includes water and take away."
-      ]
-    },
-    {
-      "intent": "BeefInquiry",
-      "utterances": [
-        "Tell me about A Piece of Beef",
-        "What's the price of Beef?",
-        "I want to know more about Beef"
-      ],
-      "answers": [
-        "A Piece of Beef is available for ₦200.00.",
-        "Our Beef is tender and savory, and is available for ₦200.00.",
-        "Here are the details for Beef. Price: ₦200.00."
-      ]
-    },
-    {
-      "intent": "BeansInquiry",
-      "utterances": [
-        "Tell me about Beans",
-        "What's the price of Beans?",
-        "I want to know more about Beans"
-      ],
-      "answers": [
-        "Beans is priced at ₦900.00.",
-        "Our Beans is a hearty and nutritious choice and is priced at ₦900.00.",
-        "Here are the details for Beans. Price: ₦900.00."
-      ]
-    },
-    {
-      "intent": "JollofRiceInquiry",
-      "utterances": [
-        "Tell me about Jollof Rice without meat",
-        "What's the price of Jollof Rice?",
-        "I want to know more about Jollof Rice"
-      ],
-      "answers": [
-        "Jollof Rice without meat is priced at ₦900.00 and includes water and take away.",
-        "Jollof Rice is a delicious and satisfying dish and is priced at ₦900.00, it also includes water and take away.",
-        "Here are the details for Jollof Rice. Price: ₦900.00 and includes water and take away."
-      ]
-    },
-    {
-      "intent": "PlantainInquiry",
-      "utterances": [
-        "Tell me about Portion of Fried Plantain",
-        "What's the price of Fried Plantain?",
-        "I want to know more about Fried Plantain"
-      ],
-      "answers": [
-        "Portion of Fried Plantain is priced at ₦300.00.",
-        "Our Fried Plantain is crispy and delightful, priced at ₦300.00.",
-        "Here are the details for Fried Plantain, priced at ₦300.00."
-      ]
-    },
-    {
-      "intent": "AchichaInquiry",
-      "utterances": [
-        "Tell me about Achicha / Fiofio without meat",
-        "What's the price of Achicha?",
-        "I want to know more about Achicha"
-      ],
-      "answers": [
-        "Achicha / Fiofio without meat is priced at ₦1,100.00 and includes water and take away.",
-        "Achicha is a satisfying and flavorful choice, priced at ₦1,100.00.",
-        "Here are the details for Achicha, priced at ₦1,100.00."
-      ]
-    },
-    {
-      "intent": "FriedRiceInquiry",
-      "utterances": [
-        "Tell me about Fried Rice without meat",
-        "What's the price of Fried Rice?",
-        "I want to know more about Fried Rice"
-      ],
-      "answers": [
-        "Fried Rice without meat is priced at ₦1,000.00 and includes water and take away.",
-        "Fried Rice is a delicious and satisfying choice, priced at ₦1,000.00.",
-        "Here are the details for Fried Rice, priced at ₦1,000.00."
-      ]
-    },
-    {
-      "intent": "SalladInquiry",
-      "utterances": [
-        "Tell me about Sallad",
-        "What's the price of Sallad?",
-        "I want to know more about Sallad"
-      ],
-      "answers": [
-        "Sallad is priced at ₦600.00.",
-        "Our Sallad is fresh and delightful, priced at ₦600.00.",
-        "Here are the details for Sallad, priced at ₦600.00."
-      ]
-    },
-    {
-      "intent": "WhiteSoupInquiry",
-      "utterances": [
-        "Tell me about White Soup and semo",
-        "What's the price of White Soup?",
-        "I want to know more about White Soup"
-      ],
-      "answers": [
-        "White Soup and semo is priced at ₦2,300.00 and includes water and take away.",
-        "White Soup is a nutritious and flavorful choice, priced at ₦2,300.00.",
-        "Here are the details for White Soup, priced at ₦2,300.00."
-      ]
-    },
-    {
-      "intent": "PorridgePlantainInquiry",
-      "utterances": [
-        "Tell me about Unripe Porridge Plantain",
-        "What's the price of Porridge Plantain?",
-        "I want to know more about Porridge Plantain"
-      ],
-      "answers": [
-        "Unripe Porridge Plantain is priced at ₦1,100.00.",
-        "Our Porridge Plantain is delicious and satisfying, priced at ₦1,100.00.",
-        "Here are the details for Porridge Plantain, priced at ₦1,100.00."
-      ]
-    },
-    {
-      "intent": "MoiMoiInquiry",
-      "utterances": [
-        "Tell me about Moi-Moi",
-        "What's the price of Moi-Moi?",
-        "I want to know more about Moi-Moi"
-      ],
-      "answers": [
-        "Moi-Moi is priced at ₦400.00.",
-        "Our Moi-Moi is a tasty and nutritious choice, priced at ₦400.00.",
-        "Here are the details for Moi-Moi, priced at ₦400.00."
-      ]
-    },
-    {
-      "intent": "YamEggSauceInquiry",
-      "utterances": [
-        "Tell me about White Yam & Egg Sauce",
-        "What's the price of Yam & Egg Sauce?",
-        "I want to know more about Yam & Egg Sauce"
-      ],
-      "answers": [
-        "White Yam & Egg Sauce is priced at ₦1,150.00 and includes water and take away.",
-        "Yam & Egg Sauce is a delightful and satisfying dish, priced at ₦1,150.00.",
-        "Here are the details for Yam & Egg Sauce, priced at ₦1,150.00."
-      ]
-    },
-    {
-      "intent": "GoatMeatInquiry",
-      "utterances": [
-        "Tell me about Piece of Goat Meat",
-        "What's the price of Goat Meat?",
-        "I want to know more about Goat Meat"
-      ],
-      "answers": [
-        "Piece of Goat Meat is available for ₦700.00.",
-        "Our Goat Meat is tender and savory, priced at ₦700.00.",
-        "Here are the details for Goat Meat, priced at ₦700.00."
-      ]
-    },
-    {
-      "intent": "CowLegInquiry",
-      "utterances": [
-        "Tell me about Piece of Cow Leg",
-        "What's the price of Cow Leg?",
-        "I want to know more about Cow Leg"
-      ],
-      "answers": [
-        "Piece of Cow Leg is available for ₦600.00.",
-        "Our Cow Leg is tender and delicious, priced at ₦600.00.",
-        "Here are the details for Cow Leg, priced at ₦600.00."
-      ]
-    },
-    {
-      "intent": "MoiMoiFishInquiry",
-      "utterances": [
-        "Tell me about Moi -Moi , 2 Portions of Plantain with Fish",
-        "What's the price of Moi-Moi with Fish?",
-        "I want to know more about Moi-Moi with Fish"
-      ],
-      "answers": [
-        "Moi -Moi , 2 Portions of Plantain with Fish is priced at ₦2,300.00.",
-        "Our Moi-Moi with Fish is a delightful and satisfying choice, priced at ₦2,300.00.",
-        "Here are the details for Moi-Moi with Fish, priced at ₦2,300.00."
-      ]
-    },
-    {
-      "intent": "FioFioFishInquiry",
-      "utterances": [
-        "Tell me about Fio-Fio with Fish",
-        "What's the price of Fio-Fio with Fish?",
-        "I want to know more about Fio-Fio with Fish"
-      ],
-      "answers": [
-        "Fio-Fio with Fish is priced at ₦2,500.00 and includes water and take away.",
-        "Fio-Fio with Fish is a flavorful and satisfying choice, priced at ₦2,500.00.",
-        "Here are the details for Fio-Fio with Fish, priced at ₦2,500.00."
-      ]
-    },
-    {
-      "intent": "FriedFishInquiry",
-      "utterances": [
-        "Tell me about Fried Fish",
-        "What's the price of Fried Fish?",
-        "I want to know more about Fried Fish"
-      ],
-      "answers": [
-        "Fried Fish is available for ₦1,500.00.",
-        "Our Fried Fish is crispy and delicious, priced at ₦1,500.00.",
-        "Here are the details for Fried Fish, priced at ₦1,500.00."
-      ]
-    },
-    {
-      "intent": "FriedChickenInquiry",
-      "utterances": [
-        "Tell me about Fried Chicken",
-        "What's the price of Fried Chicken?",
-        "I want to know more about Fried Chicken"
-      ],
-      "answers": [
-        "Fried Chicken is available for ₦1,500.00.",
-        "Our Fried Chicken is crispy and delightful, priced at ₦1,500.00.",
-        "Here are the details for Fried Chicken, priced at ₦1,500.00."
-      ]
-    },
-    {
-      "intent": "VegetableSoupInquiry",
-      "utterances": [
-        "Tell me about Vegetable Soup with Garri and Mix Meat",
-        "What's the price of Vegetable Soup?",
-        "I want to know more about Vegetable Soup"
-      ],
-      "answers": [
-        "Vegetable Soup with Garri and Mix Meat is priced at ₦2,150.00 and includes water and take away.",
-        "Vegetable Soup with Mix Meat is a delicious choice, priced at ₦2,150.00.",
-        "Here are the details for Vegetable Soup, priced at ₦2,150.00."
-      ]
-    },
-    {
-      "intent": "UkwaFishInquiry",
-      "utterances": [
-        "Tell me about Ukwa with Fish",
-        "What's the price of Ukwa with Fish?",
-        "I want to know more about Ukwa with Fish"
-      ],
-      "answers": [
-        "Ukwa with Fish is priced at ₦3,400.00 and includes water and take away.",
-        "Ukwa with Fish is a flavorful and satisfying choice, priced at ₦3,400.00.",
-        "Here are the details for Ukwa with Fish, priced at ₦3,400.00."
-      ]
-    },
-    {
-      "intent": "StickBeefInquiry",
-      "utterances": [
-        "Tell me about Stick Beef",
-        "What's the price of Stick Beef?",
-        "I want to know more about Stick Beef"
-      ],
-      "answers": [
-        "Stick Beef is available for ₦900.00.",
-        "Our Stick Beef is tender and savory, priced at ₦900.00.",
-        "Here are the details for Stick Beef, priced at ₦900.00."
-      ]
-    },
-    {
-      "intent": "OraSoupInquiry",
-      "utterances": [
-        "Tell me about Ora Soup, 2 Pieces of Meat & Garri",
-        "What's the price of Ora Soup?",
-        "I want to know more about Ora Soup"
-      ],
-      "answers": [
-        "Ora Soup, 2 Pieces of Meat & Garri is priced at ₦1,750.00 and includes water and take away.",
-        "Ora Soup is a delicious choice, priced at ₦1,750.00.",
-        "Here are the details for Ora Soup, priced at ₦1,750.00."
-      ]
-    },
-    {
-      "intent": "FriedRiceChickenSaladInquiry",
-      "utterances": [
-        "Tell me about Fried Rice with Chicken and Salad",
-        "What's the price of Fried Rice with Chicken?",
-        "I want to know more about Fried Rice with Chicken"
-      ],
-      "answers": [
-        "Fried Rice with Chicken and Salad is priced at ₦3,100.00 and includes take away.",
-        "Fried Rice with Chicken and Salad is a delightful choice, priced at ₦3,100.00.",
-        "Here are the details for Fried Rice with Chicken and Salad, priced at ₦3,100.00."
-      ]
-    },
-    {
-      "intent": "DrawSoupInquiry",
-      "utterances": [
-        "Tell me about Draw Soup and Semo",
-        "What's the price of Draw Soup?",
-        "I want to know more about Draw Soup"
-      ],
-      "answers": [
-        "Draw Soup and Semo is priced at ₦1,750.00 and includes water and take away.",
-        "Draw Soup is a flavorful choice, priced at ₦1,750.00.",
-        "Here are the details for Draw Soup, priced at ₦1,750.00."
-      ]
-    },
-    {
-      "intent": "FriedBoiledFishInquiry",
-      "utterances": [
-        "Tell me about Single Fried or Boiled Fish",
-        "What's the price of Fried or Boiled Fish?",
-        "I want to know more about Fried or Boiled Fish"
-      ],
-      "answers": [
-        "Single Fried or Boiled Fish is available for ₦1,400.00.",
-        "Our Fried or Boiled Fish is crispy and delightful, priced at ₦1,400.00.",
-        "Here are the details for Fried or Boiled Fish, priced at ₦1,400.00."
-      ]
-    },
-    {
-      "intent": "BitterLeafSoupInquiry",
-      "utterances": [
-        "Tell me about Bitter Leaf Soup and Garri with 2 Pieces of Meat",
-        "What's the price of Bitter Leaf Soup?",
-        "I want to know more about Bitter Leaf Soup"
-      ],
-      "answers": [
-        "Bitter Leaf Soup and Garri with 2 Pieces of Meat is priced at ₦1,750.00 and includes water and take away.",
-        "Bitter Leaf Soup is a delicious choice, priced at ₦1,750.00.",
-        "Here are the details for Bitter Leaf Soup, priced at ₦1,750.00."
-      ]
-    },
-    {
-      "intent": "BeansPlantainFishInquiry",
-      "utterances": [
-        "Tell me about Beans, Plantain with Fish",
-        "What's the price of Beans, Plantain with Fish?",
-        "I want to know more about Beans, Plantain with Fish"
-      ],
-      "answers": [
-        "Beans, Plantain with Fish is priced at ₦2,600.00.",
-        "Our Beans, Plantain with Fish is a delicious and satisfying choice, priced at ₦2,600.00.",
-        "Here are the details for Beans, Plantain with Fish, priced at ₦2,600.00."
-      ]
-    },
-    {
-      "intent": "WhiteRiceStewInquiry",
-      "utterances": [
-        "Tell me about White Rice & Stew",
-        "What's the price of White Rice & Stew?",
-        "I want to know more about White Rice & Stew"
-      ],
-      "answers": [
-        "White Rice & Stew is priced at ₦1,450.00 and includes 2 Meats and take away.",
-        "White Rice & Stew is a delightful choice, priced at ₦1,450.00.",
-        "Here are the details for White Rice & Stew, priced at ₦1,450.00."
-      ]
-    },
-    {
-      "intent": "BangaStewInquiry",
-      "utterances": [
-        "Tell me about White Rice & Banga Stew with 2 Pieces of Meat",
-        "What's the price of Banga Stew?",
-        "I want to know more about Banga Stew"
-      ],
-      "answers": [
-        "White Rice & Banga Stew with 2 Pieces of Meat is priced at ₦1,450.00.",
-        "Banga Stew is a flavorful and satisfying choice, priced at ₦1,450.00.",
-        "Here are the details for Banga Stew, priced at ₦1,450.00."
+        "You can reach Vivified at 08061111111 or 08031111111.",
+        "Vivified's phone numbers are 08061111111 and 08031111111.",
+        "Feel free to email Vivified at hello@vivified.com.",
+        "To contact Vivified, use the phone numbers 08061111111 or 08031111111.",
+        "For reaching out to Vivified, you can use the phone numbers 08061111111 or 08031111111.",
+        "If you need to contact Vivified, you can email at hello@vivified.com."
       ]
     },
 
-    {
-      "intent": "ChickenSauceInquiry",
-      "utterances": [
-        "Tell me about White Rice and Chicken Sauce",
-        "What's the price of Chicken Sauce?",
-        "I want to know more about Chicken Sauce"
-      ],
-      "answers": [
-        "White Rice and Chicken Sauce is priced at ₦2,500.00.",
-        "Chicken Sauce is a delightful and flavorful choice and is priced at ₦2,500.00.",
-        "Here are the details for Chicken Sauce..."
-      ]
-    },
     {
       "intent": "Fallback",
       "utterances": ["I don't understand", "What?", "Please repeat", "Could you rephrase"],

@@ -26,7 +26,7 @@ function PreMiddleware(app: express.Application) {
 
   app.use(helmet());
 
-  app.use(limiter);
+  // app.use(limiter);
 
   return app;
 }

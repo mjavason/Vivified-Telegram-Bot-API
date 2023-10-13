@@ -116,8 +116,8 @@ function telegramTestimonials(bot: Telegraf) {
 function telegramShirts(bot: Telegraf) {
   bot.command('shirts', (ctx) => {
     const message1 =
-      '(ID: 001)\nThis is a classic white T-shirt made of high-quality cotton fabric.';
-    const message2 = '(ID: 002)\nA stylish black polo shirt with a comfortable fit.';
+      '(ID: 001)\nThis is a classic milk T-shirt made of high-quality cotton fabric.';
+    const message2 = '(ID: 002)\nA stylish white polo shirt with a comfortable fit.';
     const message3 = '(ID: 003)\nA trendy blue denim shirt for a casual look.';
 
     const imageFilePath1 = 'public/shirts/s1.jpg';
@@ -146,10 +146,9 @@ function telegramShirts(bot: Telegraf) {
 
 function telegramJackets(bot: Telegraf) {
   bot.command('jackets', (ctx) => {
-    const message1 = 'Jacket 1 (ID: 101)\nStay warm in style with this black leather jacket.';
-    const message2 =
-      'Jacket 2 (ID: 102)\nA versatile blue denim jacket to complete your casual look.';
-    const message3 = 'Jacket 3 (ID: 103)\nA classic brown suede jacket for those chilly evenings.';
+    const message1 = '(ID: 101)\nStay warm in style with this black leather jacket.';
+    const message2 = '(ID: 102)\nA versatile blue denim jacket to complete your casual look.';
+    const message3 = '(ID: 103)\nA classic brown suede jacket for those chilly evenings.';
 
     const imageFilePath1 = 'public/jackets/j1.jpg';
     const imageFilePath2 = 'public/jackets/j2.jpg';
@@ -177,9 +176,9 @@ function telegramJackets(bot: Telegraf) {
 
 function telegramSignOutBundles(bot: Telegraf) {
   bot.command('sobundles', (ctx) => {
-    const message1 = `Sign-Out Bundle 1 (ID: 201)\nOur Sign-Out Bundle 1 includes a comfy shirt, stylish jacket, and a personalized tote bag - everything you need for a complete look!`;
-    const message2 = `Sign-Out Bundle 2 (ID: 202)\nWith Sign-Out Bundle 2, you'll get a trendy hoodie, a pair of comfortable pants, and a cap, making it perfect for your casual style.`;
-    const message3 = `Sign-Out Bundle 3 (ID: 203)\nExperience the best of Vivified with Sign-Out Bundle 3, which offers a premium polo shirt, a sleek jacket, and a customized coffee mug.`;
+    const message1 = `(ID: 201)\nOur Sign-Out Bundle 1 includes a comfy shirt, stylish jacket, and a personalized tote bag - everything you need for a complete look!`;
+    const message2 = `(ID: 202)\nWith Sign-Out Bundle 2, you'll get a trendy hoodie, a pair of comfortable pants, and a cap, making it perfect for your casual style.`;
+    const message3 = `(ID: 203)\nExperience the best of Vivified with Sign-Out Bundle 3, which offers a premium polo shirt, a sleek jacket, and a customized coffee mug.`;
 
     const imageFilePath1 = 'public/sob/so1.jpg';
     const imageFilePath2 = 'public/sob/so2.jpg';

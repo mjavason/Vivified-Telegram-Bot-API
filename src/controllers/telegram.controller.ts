@@ -28,6 +28,8 @@ function telegramGetEthereumPriceCommand(bot: Telegraf) {
   const coingeckoApiService = new ApiService('https://api.coingecko.com');
 
   bot.command('ethereum', (ctx) => {
+    ctx.sendChatAction('typing');
+
     console.log(ctx.from);
     coingeckoApiService
       .get<any>('/api/v3/simple/price?ids=ethereum&vs_currencies=usd')
@@ -52,6 +54,8 @@ function telegramGetEthereumPriceCommand(bot: Telegraf) {
 
 function telegramHelpCommand(bot: Telegraf) {
   bot.command('help', (ctx) => {
+    ctx.sendChatAction('typing');
+
     const message = `Need assistance? Feel free to ask questions or request help. You can also explore the available commands:\n
     /shirts - View shirts\n
     /jackets - View jackets\n
@@ -65,6 +69,8 @@ function telegramHelpCommand(bot: Telegraf) {
 
 function telegramChat(bot: Telegraf) {
   bot.on('text', (ctx) => {
+    ctx.sendChatAction('typing');
+
     // Handle regular text input (NLP chatbot interaction logic here)
     const userText = ctx.message.text;
 
@@ -91,6 +97,8 @@ function telegramTestimonials(bot: Telegraf) {
   const message = `Their representative came and told me how they needed a bulk quantity of polos within 24 hours (which I had an issue with due to the short deadline but I also needed the money). They were skeptical about the quality and the color of the polos.\n\nI assured them that they didn't have to worry about those issues and that the only problem was the tight deadline they gave me. They pleaded for my help to ensure it worked because they had an upcoming program. I agreed, collected the money, and proceeded with the production of the tees. Guess what!\n\nI delivered right on time. They were not only happy for meeting their schedule but also loved the quality of the fabric and how black it was. In the end, everyone was happy, and I was happy that I made them happy 😁`;
 
   bot.command('testimonials', (ctx) => {
+    ctx.sendChatAction('typing');
+
     // const images = [
     //   'public/testimonials/t1.jfif',
     //   'public/testimonials/t2.jfif',
@@ -115,6 +123,8 @@ function telegramTestimonials(bot: Telegraf) {
 
 function telegramShirts(bot: Telegraf) {
   bot.command('shirts', (ctx) => {
+    ctx.sendChatAction('typing');
+
     const message1 =
       '(ID: 001)\nThis is a classic milk T-shirt made of high-quality cotton fabric.';
     const message2 = '(ID: 002)\nA stylish white polo shirt with a comfortable fit.';
@@ -146,6 +156,8 @@ function telegramShirts(bot: Telegraf) {
 
 function telegramJackets(bot: Telegraf) {
   bot.command('jackets', (ctx) => {
+    ctx.sendChatAction('typing');
+
     const message1 = '(ID: 101)\nStay warm in style with this black leather jacket.';
     const message2 = '(ID: 102)\nA versatile blue denim jacket to complete your casual look.';
     const message3 = '(ID: 103)\nA classic brown suede jacket for those chilly evenings.';
@@ -176,6 +188,8 @@ function telegramJackets(bot: Telegraf) {
 
 function telegramSignOutBundles(bot: Telegraf) {
   bot.command('sobundles', (ctx) => {
+    ctx.sendChatAction('typing');
+
     const message1 = `(ID: 201)\nOur Sign-Out Bundle 1 includes a comfy shirt, stylish jacket, and a personalized tote bag - everything you need for a complete look!`;
     const message2 = `(ID: 202)\nWith Sign-Out Bundle 2, you'll get a trendy hoodie, a pair of comfortable pants, and a cap, making it perfect for your casual style.`;
     const message3 = `(ID: 203)\nExperience the best of Vivified with Sign-Out Bundle 3, which offers a premium polo shirt, a sleek jacket, and a customized coffee mug.`;
@@ -206,6 +220,8 @@ function telegramSignOutBundles(bot: Telegraf) {
 
 function telegramPrints(bot: Telegraf) {
   bot.command('prints', (ctx) => {
+    ctx.sendChatAction('typing');
+
     const message1 = 'Service is currently unavailable. Please try again later.';
 
     // Send the text message
@@ -215,6 +231,8 @@ function telegramPrints(bot: Telegraf) {
 
 function telegramOrders(bot: Telegraf) {
   bot.command('order', (ctx) => {
+    ctx.sendChatAction('typing');
+
     const productId = ctx.message.text.split(' ')[1]; // Extract the product ID from the user's message
 
     // Check if the product is out of stock

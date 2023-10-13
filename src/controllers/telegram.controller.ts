@@ -257,6 +257,11 @@ function telegramOrders(bot: Telegraf) {
 
     const productId = ctx.message.text.split(' ')[1]; // Extract the product ID from the user's message
 
+    if (!productId || productId === undefined) {
+      ctx.reply('Please enter a product ID. e.g: /order 001');
+      return;
+    }
+
     // Check if the product is out of stock
     if (true) {
       bot.telegram.sendMessage(

@@ -13,7 +13,7 @@ function telegramWelcomeCommand(bot: Telegraf) {
     const message = `Hello there! Welcome to the Vivified telegram bot.\nI respond to the following commands:
 /shirts - View available shirts
 /jackets - View available jackets
-/sign-out-bundles - View our specialized sign-out products
+/sobs - View our specialized sign-out products
 /prints - We provide jackets and t-shirts, send us your preferred write-up and where you want it to appear
 /order - Place an order
 /testimonials - View testimonials from our happy customers\n\n
@@ -55,7 +55,7 @@ function telegramHelpCommand(bot: Telegraf) {
     const message = `Need assistance? Feel free to ask questions or request help. You can also explore the available commands:\n
     /shirts - View shirts\n
     /jackets - View jackets\n
-    /sign-out-bundles - View our specialized sign-out products\n
+    /sobs - View our specialized sign-out products\n
     /prints - We provide the jackets and t-shirts, send us your preferred write-up and where you want it to appear\n
     /order - Place an order\n
     /testimonials - View testimonials from our happy customers`;
@@ -176,7 +176,7 @@ function telegramJackets(bot: Telegraf) {
 }
 
 function telegramSignOutBundles(bot: Telegraf) {
-  bot.command('sign-out-bundles', (ctx) => {
+  bot.command('sobundles', (ctx) => {
     const message1 = `Sign-Out Bundle 1 (ID: 201)\nOur Sign-Out Bundle 1 includes a comfy shirt, stylish jacket, and a personalized tote bag - everything you need for a complete look!`;
     const message2 = `Sign-Out Bundle 2 (ID: 202)\nWith Sign-Out Bundle 2, you'll get a trendy hoodie, a pair of comfortable pants, and a cap, making it perfect for your casual style.`;
     const message3 = `Sign-Out Bundle 3 (ID: 203)\nExperience the best of Vivified with Sign-Out Bundle 3, which offers a premium polo shirt, a sleek jacket, and a customized coffee mug.`;

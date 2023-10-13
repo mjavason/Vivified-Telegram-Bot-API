@@ -70,15 +70,15 @@ function telegramChat(bot: Telegraf) {
 
     if (userText) {
       converse(userText).then((data: string) => {
-        setTimeout(function () {
-          // console.log('This code will run after 2 seconds.');
-          if (!data) {
-            bot.telegram.sendMessage(ctx.chat.id, 'Sorry could you rephrase that');
-            return;
-          }
+        // setTimeout(function () {
+        // console.log('This code will run after 2 seconds.');
+        if (!data) {
+          bot.telegram.sendMessage(ctx.chat.id, 'Sorry could you rephrase that');
+          return;
+        }
 
-          bot.telegram.sendMessage(ctx.chat.id, data);
-        }, 2000);
+        bot.telegram.sendMessage(ctx.chat.id, data);
+        // }, 2000);
       });
     } else {
       // Handle the case where 'text' is missing in req.body
@@ -155,23 +155,23 @@ function telegramJackets(bot: Telegraf) {
     const imageFilePath2 = 'public/jackets/j2.jpg';
     const imageFilePath3 = 'public/jackets/j3.jpg';
 
-      // Send the image
-      bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath1 }).then(() => {
-        // Send the text message
-        bot.telegram.sendMessage(ctx.chat.id, message1).then(() => {
-          // Send the image
-          bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath2 }).then(() => {
-            // Send the text message
-            bot.telegram.sendMessage(ctx.chat.id, message2).then(() => {
-              // Send the image
-              bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath3 }).then(() => {
-                // Send the text message
-                bot.telegram.sendMessage(ctx.chat.id, message3);
-              });
+    // Send the image
+    bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath1 }).then(() => {
+      // Send the text message
+      bot.telegram.sendMessage(ctx.chat.id, message1).then(() => {
+        // Send the image
+        bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath2 }).then(() => {
+          // Send the text message
+          bot.telegram.sendMessage(ctx.chat.id, message2).then(() => {
+            // Send the image
+            bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath3 }).then(() => {
+              // Send the text message
+              bot.telegram.sendMessage(ctx.chat.id, message3);
             });
           });
         });
       });
+    });
   });
 }
 
@@ -185,23 +185,23 @@ function telegramSignOutBundles(bot: Telegraf) {
     const imageFilePath2 = 'public/sob/so2.jpg';
     const imageFilePath3 = 'public/sob/so3.jpg';
 
-       // Send the image
-       bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath1 }).then(() => {
-        // Send the text message
-        bot.telegram.sendMessage(ctx.chat.id, message1).then(() => {
-          // Send the image
-          bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath2 }).then(() => {
-            // Send the text message
-            bot.telegram.sendMessage(ctx.chat.id, message2).then(() => {
-              // Send the image
-              bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath3 }).then(() => {
-                // Send the text message
-                bot.telegram.sendMessage(ctx.chat.id, message3);
-              });
+    // Send the image
+    bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath1 }).then(() => {
+      // Send the text message
+      bot.telegram.sendMessage(ctx.chat.id, message1).then(() => {
+        // Send the image
+        bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath2 }).then(() => {
+          // Send the text message
+          bot.telegram.sendMessage(ctx.chat.id, message2).then(() => {
+            // Send the image
+            bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath3 }).then(() => {
+              // Send the text message
+              bot.telegram.sendMessage(ctx.chat.id, message3);
             });
           });
         });
       });
+    });
   });
 }
 

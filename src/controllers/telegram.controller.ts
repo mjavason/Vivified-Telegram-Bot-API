@@ -247,7 +247,18 @@ function telegramPrints(bot: Telegraf) {
     const message1 = 'Service is currently unavailable. Please try again later.';
 
     // Send the text message
-    bot.telegram.sendMessage(ctx.chat.id, message1);
+    ctx.reply(message1);
+  });
+}
+
+function telegramContact(bot: Telegraf) {
+  bot.command('prints', (ctx) => {
+    ctx.sendChatAction('typing');
+
+    const message1 = 'To contact Vivified, use the phone numbers 08062223221 or 08031152342.';
+
+    // Send the text message
+    ctx.reply(message1);
   });
 }
 

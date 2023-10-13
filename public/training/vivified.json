@@ -395,6 +395,27 @@
         "If you need to contact Vivified, you can email at hello@vivified.com."
       ]
     },
+    {
+      "intent": "About",
+      "utterances": [
+        "Tell me about Vivified",
+        "What's the story behind Vivified?",
+        "About Vivified",
+        "Give me information on Vivified",
+        "Can you provide details about Vivified?",
+        "What is the purpose of Vivified?",
+        "What kind of products does Vivified offer?",
+        "Tell me more about Vivified's clothing",
+        "Why is Vivified known for its clothing?"
+      ],
+      "answers": [
+        "Vivified is a clothing business that offers a variety of clothing options. It's not just for luxury but rather a place where students and people can come to order clothing, including branded t-shirts and other clothing items, often in bulk quantities. Our aim is to provide these high-quality products at affordable prices. We primarily target final year students, especially because they often need shirts for signing out and other special occasions. We are here to provide you with stylish and affordable clothing solutions.",
+        "Vivified is a clothing store known for its affordable and stylish clothing options. It caters to the needs of students and people who require clothing items like t-shirts, jackets, and more, both in bulk and individually. Our focus is on providing high-quality clothing at budget-friendly prices, making it accessible to a wide range of customers.",
+        "Vivified is all about making quality clothing affordable. We specialize in providing a range of clothing, from branded t-shirts to jackets, and often in bulk quantities. Our target audience includes students and anyone who appreciates fashionable clothing without breaking the bank. It's not just a clothing store; it's a solution for your clothing needs.",
+        "Vivified is here to meet your clothing needs. We offer a variety of clothing items, including t-shirts, jackets, and more. We are known for our affordable pricing, making high-quality clothing accessible to students and other customers. Our primary focus is on providing budget-friendly clothing solutions to meet your needs.",
+        "Vivified, a clothing business, is your go-to place for quality and affordability. We offer a range of clothing products, including branded t-shirts and jackets. Our specialty is making these items available in bulk at prices that won't break the bank. Whether you're a student or just someone looking for affordable, stylish clothing, Vivified is here to cater to your needs."
+      ]
+    },
 
     {
       "intent": "Fallback",

@@ -113,6 +113,152 @@ function telegramTestimonials(bot: Telegraf) {
   });
 }
 
+function telegramShirts(bot: Telegraf) {
+  bot.command('shirts', (ctx) => {
+    const message1 =
+      '(ID: 001)\nThis is a classic white T-shirt made of high-quality cotton fabric.';
+    const message2 = '(ID: 002)\nA stylish black polo shirt with a comfortable fit.';
+    const message3 = '(ID: 003)\nA trendy blue denim shirt for a casual look.';
+
+    const imageFilePath1 = 'public/shirts/s1.jpg';
+    const imageFilePath2 = 'public/shirts/s2.jpg';
+    const imageFilePath3 = 'public/shirts/s3.jpg';
+
+    // Send the image
+    bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath1 }).then(() => {
+      // Send the text message
+      bot.telegram.sendMessage(ctx.chat.id, message1);
+    });
+
+    // Send the image
+    bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath2 }).then(() => {
+      // Send the text message
+      bot.telegram.sendMessage(ctx.chat.id, message2);
+    });
+
+    // Send the image
+    bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath3 }).then(() => {
+      // Send the text message
+      bot.telegram.sendMessage(ctx.chat.id, message3);
+    });
+  });
+}
+
+function telegramJackets(bot: Telegraf) {
+  bot.command('jackets', (ctx) => {
+    const message1 = 'Jacket 1 (ID: 101)\nStay warm in style with this black leather jacket.';
+    const message2 =
+      'Jacket 2 (ID: 102)\nA versatile blue denim jacket to complete your casual look.';
+    const message3 = 'Jacket 3 (ID: 103)\nA classic brown suede jacket for those chilly evenings.';
+
+    const imageFilePath1 = 'public/jackets/j1.jpg';
+    const imageFilePath2 = 'public/jackets/j2.jpg';
+    const imageFilePath3 = 'public/jackets/j3.jpg';
+
+    // Send the image
+    bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath1 }).then(() => {
+      // Send the text message
+      bot.telegram.sendMessage(ctx.chat.id, message1);
+    });
+
+    // Send the image
+    bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath2 }).then(() => {
+      // Send the text message
+      bot.telegram.sendMessage(ctx.chat.id, message2);
+    });
+
+    // Send the image
+    bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath3 }).then(() => {
+      // Send the text message
+      bot.telegram.sendMessage(ctx.chat.id, message3);
+    });
+  });
+}
+
+function telegramSignOutBundles(bot: Telegraf) {
+  bot.command('sign-out-bundles', (ctx) => {
+    const message1 = `Sign-Out Bundle 1 (ID: 201)\nOur Sign-Out Bundle 1 includes a comfy shirt, stylish jacket, and a personalized tote bag - everything you need for a complete look!`;
+    const message2 = `Sign-Out Bundle 2 (ID: 202)\nWith Sign-Out Bundle 2, you'll get a trendy hoodie, a pair of comfortable pants, and a cap, making it perfect for your casual style.`;
+    const message3 = `Sign-Out Bundle 3 (ID: 203)\nExperience the best of Vivified with Sign-Out Bundle 3, which offers a premium polo shirt, a sleek jacket, and a customized coffee mug.`;
+
+    const imageFilePath1 = 'public/sob/so1.jpg';
+    const imageFilePath2 = 'public/sob/so2.jpg';
+    const imageFilePath3 = 'public/sob/so3.jpg';
+
+    // Send the image
+    bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath1 }).then(() => {
+      // Send the text message
+      bot.telegram.sendMessage(ctx.chat.id, message1);
+    });
+
+    // Send the image
+    bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath2 }).then(() => {
+      // Send the text message
+      bot.telegram.sendMessage(ctx.chat.id, message2);
+    });
+
+    // Send the image
+    bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath3 }).then(() => {
+      // Send the text message
+      bot.telegram.sendMessage(ctx.chat.id, message3);
+    });
+  });
+}
+
+function telegramPrints(bot: Telegraf) {
+  bot.command('prints', (ctx) => {
+    const message1 = 'Service is currently unavailable. Please try again later.';
+
+    // Send the text message
+    bot.telegram.sendMessage(ctx.chat.id, message1);
+  });
+}
+
+function telegramOrders(bot: Telegraf) {
+  bot.command('order', (ctx) => {
+    const productId = ctx.message.text.split(' ')[1]; // Extract the product ID from the user's message
+
+    // Check if the product is out of stock
+    if (true) {
+      bot.telegram.sendMessage(
+        ctx.chat.id,
+        `I'm sorry, the product with ID ${productId} is currently out of stock. You can use the /contact command to be notified when it becomes available.`,
+      );
+    } else {
+      // Handle the order process for the available product
+      bot.telegram.sendMessage(
+        ctx.chat.id,
+        `You've selected product with ID ${productId} for ordering. Please follow the steps to complete your order.`,
+      );
+      // Add your order handling logic here for available products
+    }
+  });
+}
+
+// function handleProductRequest(productId: string) {
+//   const products = {
+//     s1: { name: 'Product 1', image: 's1.jfif' },
+//     s2: { name: 'Product 2', image: 's2.jfif' },
+//     s3: { name: 'Product 3', image: 's3.jfif' },
+//     // Add more products as needed
+//   };
+
+//   if (products[productId]) {
+//     const product = products[productId];
+//     const phoneNumber = '08063313480'; // Replace with your actual contact number
+
+//     // Display the product image
+//     const imageFilePath = `public/shirts/${product.image}`;
+//     bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath }).then(() => {
+//       // Provide instructions to contact a phone number
+//       bot.telegram.sendMessage(ctx.chat.id, `To request ${product.name}, please contact us at ${phoneNumber}.`);
+//     });
+//   } else {
+//     // Handle the case when the product ID doesn't exist
+//     bot.telegram.sendMessage(ctx.chat.id, 'Sorry, the requested product does not exist.');
+//   }
+// }
+
 class Controller {
   async default(req: Request, res: Response) {
     res.sendFile(path.join(__dirname, '/index.html'));
@@ -125,6 +271,11 @@ class Controller {
     // telegramGetEthereumPriceCommand(bot);
     telegramHelpCommand(bot);
     telegramTestimonials(bot);
+    telegramShirts(bot);
+    telegramJackets(bot);
+    telegramSignOutBundles(bot);
+    telegramPrints(bot);
+
     telegramChat(bot);
 
     bot.launch();

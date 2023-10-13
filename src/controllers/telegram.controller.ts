@@ -127,19 +127,19 @@ function telegramShirts(bot: Telegraf) {
     // Send the image
     bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath1 }).then(() => {
       // Send the text message
-      bot.telegram.sendMessage(ctx.chat.id, message1);
-    });
-
-    // Send the image
-    bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath2 }).then(() => {
-      // Send the text message
-      bot.telegram.sendMessage(ctx.chat.id, message2);
-    });
-
-    // Send the image
-    bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath3 }).then(() => {
-      // Send the text message
-      bot.telegram.sendMessage(ctx.chat.id, message3);
+      bot.telegram.sendMessage(ctx.chat.id, message1).then(() => {
+        // Send the image
+        bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath2 }).then(() => {
+          // Send the text message
+          bot.telegram.sendMessage(ctx.chat.id, message2).then(() => {
+            // Send the image
+            bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath3 }).then(() => {
+              // Send the text message
+              bot.telegram.sendMessage(ctx.chat.id, message3);
+            });
+          });
+        });
+      });
     });
   });
 }
@@ -155,23 +155,23 @@ function telegramJackets(bot: Telegraf) {
     const imageFilePath2 = 'public/jackets/j2.jpg';
     const imageFilePath3 = 'public/jackets/j3.jpg';
 
-    // Send the image
-    bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath1 }).then(() => {
-      // Send the text message
-      bot.telegram.sendMessage(ctx.chat.id, message1);
-    });
-
-    // Send the image
-    bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath2 }).then(() => {
-      // Send the text message
-      bot.telegram.sendMessage(ctx.chat.id, message2);
-    });
-
-    // Send the image
-    bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath3 }).then(() => {
-      // Send the text message
-      bot.telegram.sendMessage(ctx.chat.id, message3);
-    });
+      // Send the image
+      bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath1 }).then(() => {
+        // Send the text message
+        bot.telegram.sendMessage(ctx.chat.id, message1).then(() => {
+          // Send the image
+          bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath2 }).then(() => {
+            // Send the text message
+            bot.telegram.sendMessage(ctx.chat.id, message2).then(() => {
+              // Send the image
+              bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath3 }).then(() => {
+                // Send the text message
+                bot.telegram.sendMessage(ctx.chat.id, message3);
+              });
+            });
+          });
+        });
+      });
   });
 }
 
@@ -185,23 +185,23 @@ function telegramSignOutBundles(bot: Telegraf) {
     const imageFilePath2 = 'public/sob/so2.jpg';
     const imageFilePath3 = 'public/sob/so3.jpg';
 
-    // Send the image
-    bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath1 }).then(() => {
-      // Send the text message
-      bot.telegram.sendMessage(ctx.chat.id, message1);
-    });
-
-    // Send the image
-    bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath2 }).then(() => {
-      // Send the text message
-      bot.telegram.sendMessage(ctx.chat.id, message2);
-    });
-
-    // Send the image
-    bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath3 }).then(() => {
-      // Send the text message
-      bot.telegram.sendMessage(ctx.chat.id, message3);
-    });
+       // Send the image
+       bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath1 }).then(() => {
+        // Send the text message
+        bot.telegram.sendMessage(ctx.chat.id, message1).then(() => {
+          // Send the image
+          bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath2 }).then(() => {
+            // Send the text message
+            bot.telegram.sendMessage(ctx.chat.id, message2).then(() => {
+              // Send the image
+              bot.telegram.sendPhoto(ctx.chat.id, { source: imageFilePath3 }).then(() => {
+                // Send the text message
+                bot.telegram.sendMessage(ctx.chat.id, message3);
+              });
+            });
+          });
+        });
+      });
   });
 }
 

@@ -22,8 +22,6 @@ The API serves as the backbone for the Vivified Telegram Bot, offering various f
 
 2. You can initiate a chat with the bot by sending the `/start` command.
 
-3. To inquire about Ethereum-related information, send the `/ethereum` command to the bot.
-
 ## Getting Started
 
 To set up and utilize the Vivified Telegram Bot API, follow these steps:
